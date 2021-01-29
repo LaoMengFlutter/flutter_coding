@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_coding/pageview_indicator/page_indicator_main.dart';
+import 'package:flutter_coding/pageview_indicator/yj/yj_pageview_indicator_demo.dart';
 
 void main() {
   runApp(MyApp());
@@ -44,6 +45,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   List<Map<String, dynamic>> _list = [
     {'title': 'PageView Indicator', 'widget': PageIndicatorDemo()},
+    {'title': 'YJ PageView Indicator', 'widget': YJPageViewIndicatorDemo()},
   ];
 
   @override
@@ -64,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           );
         },
-        separatorBuilder: (context, index){
+        separatorBuilder: (context, index) {
           return Divider();
         },
         itemCount: _list.length,
